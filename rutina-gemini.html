@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="RutinaJGemini">
+<meta name="theme-color" content="#0e0f11">
+<title>RutinaJGemini</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0e0f11;
+  --bg2: #16181c;
+  --bg3: #1e2026;
+  --border: #2a2d35;
+  --text: #e8eaf0;
+  --muted: #6b7080;
+  --accent: #c8f060;
+  --accent-dim: #8aaa2a;
+  --accent-bg: #1e2a08;
+  --done: #152009;
+  --done-border: #4a7a14;
+  --red: #f06060;
+  --orange: #f0a060;
+  --orange-bg: #2a1808;
+  --orange-border: #7a4a14;
+  --blue: #60c8f0;
+  --blue-bg: #08182a;
+  --blue-border: #147a8a;
+  --radius: 10px;
+  --font-head: 'Syne', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
+body { background: var(--bg); color: var(--text); font-family: var(--font-mono); min-height: 100vh; overflow-x: hidden; -webkit-user-select: none; user-select: none; -webkit-font-smoothing: antialiased; }
+
+.app-header { padding: 12px 14px 10px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); z-index: 50; }
+.app-title { font-family: var(--font-head); font-size: 18px; font-weight: 700; letter-spacing: -0.5px; color: var(--accent); }
+.app-date { font-size: 11px; color: var(--muted); }
+
+.content { padding: 12px 12px 80px; }
+
+.pills { display: flex; gap: 6px; margin-bottom: 10px; overflow-x: auto; padding-bottom: 4px; }
+.pill { padding: 6px 10px; background: var(--bg2); border: 1px solid var(--border); border-radius: 6px; color: var(--muted); font-size: 10px; cursor: pointer; white-space: nowrap; transition: all 0.15s; }
+.pill.active { background: var(--accent-bg); border-color: var(--accent-dim); color: var(--accent); }
+.pill.completed { background: var(--done); border-color: var(--done-border); color: var(--accent); }
+
+.day-info { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 10px; margin-bottom: 10px; font-size: 11px; }
+.day-info.completed { background: var(--done); border-color: var(--done-border); }
+.day-title { color: var(--accent); font-weight: 600; margin-bottom: 2px; }
+.day-info.completed .day-title { color: var(--accent); }
+.day-sub { color: var(--muted); font-size: 10px; }
+.day-info.completed .day-sub { color: var(--accent-dim); }
+
+/* Sección especial abdominales */
+.section-header { display: flex; align-items: center; gap: 6px; margin: 12px 0 6px; font-size: 10px; font-family: var(--font-head); font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+.section-header.abs { color: var(--orange); }
+.section-header.calves { color: var(--blue); }
+.section-header::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+.exercise { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
+.exercise.completed { background: var(--done); border-color: var(--done-border); }
+.exercise.abs-ex { border-color: var(--orange-border); background: var(--orange-bg); }
+.exercise.abs-ex.completed { background: var(--done); border-color: var(--done-border); }
+.exercise.calves-ex { border-color: var(--blue-border); background: var(--blue-bg); }
+.exercise.calves-ex.completed { background: var(--done); border-color: var(--done-border); }
+
+.ex-header { padding: 10px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; }
+.ex-name { font-size: 12px; font-weight: 600; color: var(--text); }
+.exercise.completed .ex-name { color: var(--accent); }
+.exercise.abs-ex .ex-name { color: var(--orange); }
+.exercise.abs-ex.completed .ex-name { color: var(--accent); }
+.exercise.calves-ex .ex-name { color: var(--blue); }
+.exercise.calves-ex.completed .ex-name { color: var(--accent); }
+.ex-arrow { color: var(--accent); transition: transform 0.2s; font-size: 14px; }
+.exercise.abs-ex .ex-arrow { color: var(--orange); }
+.exercise.calves-ex .ex-arrow { color: var(--blue); }
+.exercise.collapsed .ex-arrow { transform: rotate(-90deg); }
+
+.ex-meta { padding: 0 10px; display: flex; gap: 8px; font-size: 9px; color: var(--muted); margin-bottom: 8px; }
+.ex-meta span { background: var(--bg3); padding: 3px 6px; border-radius: 4px; }
+
+.series-wrap { padding: 10px; border-top: 1px solid var(--border); }
+.series { margin-bottom: 8px; }
+.series.completed { background: var(--accent-bg); border: 1px solid var(--done-border); border-radius: 6px; padding: 8px; }
+.series-label { font-size: 10px; color: var(--muted); margin-bottom: 4px; }
+.series.completed .series-label { color: var(--accent); }
+
+.serie-boxes { display: grid; grid-template-columns: 1fr 60px 80px; gap: 6px; margin-bottom: 6px; }
+.box { background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 10px; text-align: center; cursor: pointer; transition: all 0.15s; }
+.box input { width: 100%; background: transparent; border: none; color: var(--text); text-align: center; font-size: 12px; font-family: var(--font-mono); font-weight: 600; }
+.box input:focus { outline: none; }
+.box.done { background: var(--done); border-color: var(--done-border); color: var(--accent); }
+
+.check-btn { display: flex; align-items: center; justify-content: center; font-size: 28px; cursor: pointer; padding: 0; color: var(--muted); }
+.check-btn.active { color: var(--accent-dim); }
+
+.bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg); border-top: 1px solid var(--border); padding: 8px 12px; display: flex; gap: 6px; z-index: 50; }
+.nav-btn { flex: 1; padding: 10px; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; color: var(--muted); font-size: 10px; font-family: var(--font-mono); cursor: pointer; text-align: center; transition: all 0.15s; }
+.nav-btn.active { background: var(--accent-bg); border-color: var(--accent-dim); color: var(--accent); }
+.nav-btn.update-btn { background: var(--accent-bg); border-color: var(--accent-dim); color: var(--accent); }
+.nav-btn.reset-btn { background: var(--orange-bg); border-color: var(--orange-border); color: var(--orange); }
+.nav-btn.reset-all-btn { background: var(--red); border-color: var(--red); color: var(--text); }
+
+.exercise.collapsed .ex-meta,
+.exercise.collapsed .series-wrap { display: none; }
+
+.loading { text-align: center; padding: 20px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="app-header">
+  <div class="app-title">RutinaJGemini</div>
+  <div class="app-date" id="hdr-date"></div>
+</div>
+
+<div class="content" id="main-view">
+  <div class="pills" id="pills"></div>
+  <div id="day-container"></div>
+</div>
+
+<div class="bottom-nav" id="bottom-nav">
+  <button class="nav-btn active" id="btn-train" onclick="switchView('train')">Entrenar</button>
+</div>
+
+<script>
+let DAYS_DATA = null;
+let expandedEx = null;
+let ST = {};
+let lastSavedState = '{}';
+let hasChanges = false;
+
+// ── CARGAR DATOS JSON ──────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const response = await fetch('datos-gemini.json');
+    if (!response.ok) throw new Error('No se pudo cargar datos-gemini.json');
+    DAYS_DATA = await response.json();
+    console.log('✓ Datos cargados:', DAYS_DATA.rutina);
+    init();
+  } catch (error) {
+    console.error('Error cargando JSON:', error);
+    document.getElementById('day-container').innerHTML = `
+      <div class="loading">
+        <p style="color:var(--red);">⚠ Error cargando datos</p>
+        <p style="font-size:10px;margin-top:10px;">${error.message}</p>
+      </div>
+    `;
+  }
+}
+
+function checkForChanges() {
+  const currentState = JSON.stringify(ST);
+  if (currentState !== lastSavedState) {
+    hasChanges = true;
+    updateBottomNav();
+  }
+}
+
+// Verifica si TODOS los ejercicios del día (incluyendo abs y gemelos si aplican) están completos
+function checkDayCompletion() {
+  return checkDayCompletionForKey(ST.day);
+}
+
+function checkDayCompletionForKey(dayKey) {
+  if (!ST.ser[dayKey]) return false;
+  const dayData = DAYS_DATA.ejercicios[dayKey];
+
+  // Ejercicios principales
+  const mainDone = dayData.ejercicios.every(ex => {
+    if (!ST.ser[dayKey][ex.id]) return false;
+    return Object.values(ST.ser[dayKey][ex.id]).every(s => s.done);
+  });
+  if (!mainDone) return false;
+
+  // Abdominales (si aplica)
+  if (dayData.abdominales && DAYS_DATA.abdominales) {
+    const absDone = DAYS_DATA.abdominales.ejercicios.every(ex => {
+      const storeId = 'abs_' + ex.id;
+      if (!ST.ser[dayKey][storeId]) return false;
+      return Object.values(ST.ser[dayKey][storeId]).every(s => s.done);
+    });
+    if (!absDone) return false;
+  }
+
+  // Gemelos (si aplica)
+  if (dayData.gemelos && DAYS_DATA.gemelos) {
+    const calvesDone = DAYS_DATA.gemelos.ejercicios.every(ex => {
+      const storeId = 'gem_' + ex.id;
+      if (!ST.ser[dayKey][storeId]) return false;
+      return Object.values(ST.ser[dayKey][storeId]).every(s => s.done);
+    });
+    if (!calvesDone) return false;
+  }
+
+  return true;
+}
+
+function updateBottomNav() {
+  const nav = document.getElementById('bottom-nav');
+  let html = `<button class="nav-btn active" id="btn-train" onclick="switchView('train')">Entrenar</button>`;
+  
+  if (hasChanges) {
+    html += `<button class="nav-btn update-btn" onclick="updateJSON()">Actualizar</button>`;
+  }
+  
+  html += `<button class="nav-btn reset-btn" onclick="resetDay()">Reiniciar Día</button>`;
+  html += `<button class="nav-btn reset-all-btn" onclick="resetAll()">Reiniciar Todo</button>`;
+  
+  nav.innerHTML = html;
+}
+
+function resetDay() {
+  const dayKey = ST.day;
+  const dayLabel = (DAYS_DATA && DAYS_DATA.ejercicios[dayKey]) ? DAYS_DATA.ejercicios[dayKey].label : dayKey;
+  if (!confirm(`¿Reiniciar el estado de ${dayLabel}? Se desmarcarán todos los ejercicios de este día.`)) return;
+  if (ST.ser[dayKey]) {
+    Object.keys(ST.ser[dayKey]).forEach(exId => {
+      Object.keys(ST.ser[dayKey][exId]).forEach(idx => {
+        ST.ser[dayKey][exId][idx].done = false;
+      });
+    });
+    save();
+    renderMain();
+  }
+}
+
+function resetAll() {
+  if (!confirm('¿Reiniciar el estado de TODOS los días? Se desmarcarán todos los ejercicios de toda la rutina.')) return;
+  Object.keys(ST.ser).forEach(dayKey => {
+    Object.keys(ST.ser[dayKey]).forEach(exId => {
+      Object.keys(ST.ser[dayKey][exId]).forEach(idx => {
+        ST.ser[dayKey][exId][idx].done = false;
+      });
+    });
+  });
+  save();
+  renderMain();
+}
+
+function updateJSON() {
+  Object.keys(ST.ser).forEach(dayKey => {
+    if (DAYS_DATA.ejercicios[dayKey]) {
+      DAYS_DATA.ejercicios[dayKey].ejercicios.forEach(exercise => {
+        if (ST.ser[dayKey] && ST.ser[dayKey][exercise.id]) {
+          const weights = ST.ser[dayKey][exercise.id];
+          const lastWeight = Math.max(...Object.values(weights).map(w => w.w).filter(w => w > 0));
+          if (lastWeight > 0) {
+            exercise.peso_default = lastWeight;
+            if (!exercise.historico) exercise.historico = [];
+            if (!exercise.historico.includes(lastWeight)) {
+              exercise.historico.push(lastWeight);
+            }
+          }
+        }
+      });
+    }
+  });
+  
+  if (!DAYS_DATA.diasCompletados) DAYS_DATA.diasCompletados = [];
+  const hoy = new Date().toISOString().split('T')[0];
+  const dayKey = ST.day;
+  if (checkDayCompletion() && !DAYS_DATA.diasCompletados.includes(`${dayKey}-${hoy}`)) {
+    DAYS_DATA.diasCompletados.push(`${dayKey}-${hoy}`);
+  }
+  
+  DAYS_DATA.ultima_actualizacion = hoy;
+  
+  const gistId = '3d42a7018719d4e9360f89434e1f0d07';
+  const gistUrl = `https://api.github.com/gists/${gistId}`;
+  const token = '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';
+  
+  fetch(gistUrl, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `token ${token}`
+    },
+    body: JSON.stringify({
+      files: {
+        'datos-gemini.json': {
+          content: JSON.stringify(DAYS_DATA, null, 2)
+        }
+      }
+    })
+  })
+  .then(response => {
+    if (response.ok) {
+      hasChanges = false;
+      lastSavedState = JSON.stringify(ST);
+      updateBottomNav();
+      alert('✓ Datos actualizados en el Gist automáticamente.');
+    } else {
+      return response.json().then(err => {
+        throw new Error(err.message || 'Error desconocido');
+      });
+    }
+  })
+  .catch(error => {
+    console.error('Error actualizando Gist:', error);
+    alert('✗ Error: ' + error.message);
+  });
+}
+
+// ── STATE ──────────────────────────────────────────────────────────────────
+try { ST = JSON.parse(localStorage.getItem('rutina-gemini')) || {}; } catch(e) {}
+if (!ST.day) ST.day = 'd1';
+if (!ST.ser) ST.ser = {};
+
+function save() { 
+  localStorage.setItem('rutina-gemini', JSON.stringify(ST));
+  checkForChanges();
+}
+
+function fmtDate(d) {
+  const days = ['dom','lun','mar','mié','jue','vie','sáb'];
+  const months = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  return `${days[d.getDay()]} ${d.getDate()} ${months[d.getMonth()]}`;
+}
+
+function getSer(did, eid, idx, dw) {
+  if (!ST.ser[did]) ST.ser[did] = {};
+  if (!ST.ser[did][eid]) ST.ser[did][eid] = {};
+  if (!ST.ser[did][eid][idx]) {
+    const weight = (dw !== null && dw !== undefined) ? dw : 0;
+    ST.ser[did][eid][idx] = { done: false, w: weight, r: 12 };
+  }
+  return ST.ser[did][eid][idx];
+}
+
+function togEx(exId) {
+  if (expandedEx === exId) {
+    expandedEx = null;
+    document.querySelectorAll('.exercise').forEach(e => e.classList.add('collapsed'));
+  } else {
+    expandedEx = exId;
+    document.querySelectorAll('.exercise').forEach(e => {
+      if (e.dataset.exId === exId) e.classList.remove('collapsed');
+      else e.classList.add('collapsed');
+    });
+  }
+}
+
+// FIX 1: selectDay actualiza pills y renderiza SIN recargar página
+function selectDay(key) {
+  ST.day = key;
+  expandedEx = null; // resetear expansión al cambiar de día
+  save();
+
+  // Actualizar clases de pills en el DOM directamente (sin re-renderizar todo)
+  document.querySelectorAll('.pill').forEach(p => {
+    const pKey = p.dataset.dayKey;
+    p.classList.toggle('active', pKey === key);
+  });
+
+  renderMain();
+}
+
+function renderPills() {
+  const pills = document.getElementById('pills');
+  const daysKeys = Object.keys(DAYS_DATA.ejercicios);
+  pills.innerHTML = daysKeys.map(key => {
+    const dayData = DAYS_DATA.ejercicios[key];
+    const isCompleted = checkDayCompletionForKey(key);
+    const isActive = key === ST.day;
+    return `<button 
+      class="pill ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''}" 
+      data-day-key="${key}"
+      onclick="selectDay('${key}')"
+    >${dayData.label}</button>`;
+  }).join('');
+}
+
+// Renderiza un bloque de ejercicio (reutilizable para main, abs y gemelos)
+function renderEx(dayKey, exercise, storeIdPrefix, extraClass) {
+  const did = dayKey;
+  const storeId = storeIdPrefix ? storeIdPrefix + exercise.id : exercise.id;
+  const sets = exercise.series || 3;
+  const seriesArray = Array.from({length: sets}, (_, i) => getSer(did, storeId, i, exercise.peso_default || null));
+  const allSeriesDone = seriesArray.every(s => s.done);
+  const isExpanded = expandedEx === storeId;
+  const cssClass = extraClass || '';
+  
+  let html = `
+    <div class="exercise ${cssClass} ${isExpanded ? '' : 'collapsed'} ${allSeriesDone ? 'completed' : ''}" data-ex-id="${storeId}" onclick="event.stopPropagation()">
+      <div class="ex-header" onclick="togEx('${storeId}'); event.stopPropagation();">
+        <div class="ex-name">${exercise.nombre}</div>
+        <div class="ex-arrow">▼</div>
+      </div>
+      <div class="ex-meta">
+        ${exercise.peso_default ? `<span>${exercise.peso_default}kg</span>` : '<span>sin peso</span>'}
+        ${exercise.historico && exercise.historico.length > 0 ? `<span>Hist: ${exercise.historico[exercise.historico.length-1]}kg</span>` : ''}
+        ${exercise.nota ? `<span style="max-width:200px;white-space:normal;line-height:1.3;">${exercise.nota}</span>` : ''}
+      </div>
+      <div class="series-wrap">
+  `;
+  
+  seriesArray.forEach((ser, idx) => {
+    const isDone = ser.done;
+    // Mostrar repeticiones del JSON o el valor guardado
+    const repsDisplay = exercise.repeticiones !== undefined ? exercise.repeticiones : ser.r;
+    html += `
+      <div class="series ${isDone ? 'completed' : ''}">
+        <div class="series-label">Serie ${idx + 1}${exercise.repeticiones !== undefined ? ' · ' + repsDisplay + ' reps' : ''}</div>
+        <div class="serie-boxes">
+          <div class="box" onclick="event.stopPropagation()">
+            <input type="number" value="${ser.w}" placeholder="0" onchange="(function() { ST.ser['${did}']['${storeId}'][${idx}].w = +this.value; save(); }).call(this);" min="0">
+          </div>
+          <div class="box" onclick="event.stopPropagation()">
+            <input type="number" value="${ser.r}" placeholder="12" onchange="(function() { ST.ser['${did}']['${storeId}'][${idx}].r = +this.value; save(); }).call(this);" min="1">
+          </div>
+          <div class="check-btn ${isDone ? 'active' : ''}" onclick="(function() { ST.ser['${did}']['${storeId}'][${idx}].done = !ST.ser['${did}']['${storeId}'][${idx}].done; save(); renderMain(); }).call(this); event.stopPropagation();">
+            ${isDone ? '●' : '○'}
+          </div>
+        </div>
+      </div>
+    `;
+  });
+  
+  html += `</div></div>`;
+  return html;
+}
+
+function renderMain() {
+  const dayKey = ST.day;
+  const dayData = DAYS_DATA.ejercicios[dayKey];
+  const dayCompleted = checkDayCompletion();
+  const currentExpanded = expandedEx;
+  
+  let html = `
+    <div class="day-info ${dayCompleted ? 'completed' : ''}">
+      <div class="day-title">${dayData.tag}</div>
+      ${dayData.sub ? `<div class="day-sub">${dayData.sub}</div>` : ''}
+    </div>
+  `;
+  
+  // Ejercicios principales
+  dayData.ejercicios.forEach(exercise => {
+    html += renderEx(dayKey, exercise, '', '');
+  });
+
+  // FIX 2: Abdominales (si este día los tiene)
+  if (dayData.abdominales && DAYS_DATA.abdominales) {
+    html += `<div class="section-header abs">🔥 Abdominales · ${DAYS_DATA.abdominales.frecuencia}</div>`;
+    DAYS_DATA.abdominales.ejercicios.forEach(exercise => {
+      html += renderEx(dayKey, exercise, 'abs_', 'abs-ex');
+    });
+  }
+
+  // FIX 2: Gemelos (si este día los tiene)
+  if (dayData.gemelos && DAYS_DATA.gemelos) {
+    html += `<div class="section-header calves">💧 Gemelos · ${DAYS_DATA.gemelos.frecuencia}</div>`;
+    DAYS_DATA.gemelos.ejercicios.forEach(exercise => {
+      html += renderEx(dayKey, exercise, 'gem_', 'calves-ex');
+    });
+  }
+  
+  document.getElementById('day-container').innerHTML = html;
+  
+  // Restaurar expansión
+  if (currentExpanded) {
+    expandedEx = currentExpanded;
+    const exElement = document.querySelector(`[data-ex-id="${currentExpanded}"]`);
+    if (exElement) exElement.classList.remove('collapsed');
+  }
+
+  // Actualizar pills para reflejar completados correctamente
+  document.querySelectorAll('.pill').forEach(p => {
+    const pKey = p.dataset.dayKey;
+    const isCompleted = checkDayCompletionForKey(pKey);
+    p.classList.toggle('active', pKey === ST.day);
+    p.classList.toggle('completed', isCompleted);
+  });
+  
+  updateBottomNav();
+}
+
+function switchView(view) {
+  document.getElementById('main-view').style.display = view === 'train' ? 'block' : 'none';
+}
+
+function init() {
+  lastSavedState = JSON.stringify(ST);
+  document.getElementById('hdr-date').textContent = fmtDate(new Date());
+  renderPills();
+  renderMain();
+}
+
+// Registro del Service Worker (PWA)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('✓ SW registrado:', reg.scope))
+      .catch(err => console.warn('✗ SW no registrado:', err));
+  });
+}
+
+loadData();
+</script>
+
+</body>
+</html>
