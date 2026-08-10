@@ -4,10 +4,10 @@
 //  - datos-gemini.json: Network First (para leer última versión sincronizada) con fallback a cache
 //  - API del Gist (github.com/api): siempre network, nunca cachear
 
-const CACHE_VERSION = 'rutinajg-v1';
+const CACHE_VERSION = 'rutinajg-v2';
 const SHELL_ASSETS = [
   './',
-  './rutina-gemini.html',
+  './index.html',
   './manifest.json',
   './icon-192.png',
   './icon-512.png',
