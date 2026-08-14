@@ -222,7 +222,7 @@
     "d5": {
       "label": "Día 5",
       "tag": "Torso B · Volumen Hombros, Pecho y Tríceps",
-      "sub": "Hipertrofia · Rango completo · Drop-set final",
+      "sub": "Hipertrofia · Rango completo · Drop-set final · Cierre con core",
       "ejercicios": [
         {
           "id": "e1",
@@ -258,6 +258,24 @@
           "repeticiones": "12-15",
           "nota": "Sentado, torso inclinado sobre los muslos · Tempo 2-0-1-1 · Retracción escapular al final · Mancuernas 4kg o 5kg",
           "peso_default": 4,
+          "historico": []
+        },
+        {
+          "id": "e5",
+          "nombre": "Plancha Lateral (Core Anti-flexión Lateral)",
+          "series": 3,
+          "repeticiones": "30-45s/lado",
+          "nota": "Colchoneta · Apoyo en antebrazo y canto del pie · Cadera bien alta formando línea recta hombro-cadera-tobillo · Aprieta glúteo y oblicuo del lado bajo · Progresión: si sobra, elevar el brazo libre al techo · Completa el corsé lumbar (anti-flexión lateral) que no cubren la plancha frontal del Día 1 ni el Bird-Dog del Día 4",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e6",
+          "nombre": "Dead Bug (Core Anti-extensión)",
+          "series": 3,
+          "repeticiones": "8-10/lado",
+          "nota": "Boca arriba en colchoneta · Lumbar pegada al piso todo el tiempo (sin arco) · Extendé brazo y pierna contralaterales bajando lento en 3s sin tocar el piso · Volvé al centro y alterná · Respiración: exhalá al extender · Cero estrés lumbar y perfecto para bajar pulsaciones al cierre del día",
+          "peso_default": null,
           "historico": []
         }
       ]
