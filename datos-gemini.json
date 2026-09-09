@@ -1,219 +1,345 @@
 {
-  "rutina": "RutinaCoach5Dias",
-  "descripcion": "Rutina de 5 días · Piernas A · Torso A · Tracción · Piernas B · Torso B · Sesiones de 45-55 min · Descanso 60-90s entre series · Espalda sin carga axial (sin remos libres) para proteger y fortalecer la zona lumbar · Gemelos 2x/semana en días de pierna · Días 6 y 7 descanso",
+  "rutina": "Primer Mesociclo Rutina Hernan",
+  "descripcion": "Rutina de 5 días (Empuje, Tracción, Piernas, Full Body Superior, Tren Inferior) · Entrenamientos en casa · Core y Gemelos alternados para evitar superposición de días",
   "ejercicios": {
     "d1": {
       "label": "Día 1",
-      "tag": "Piernas A · Cuádriceps y Glúteo",
-      "sub": "Fuerza unilateral · Estabilidad · Core como corsé natural",
+      "tag": "Empuje + Core",
+      "sub": "Enfoque en pecho, hombros y tríceps + Abdominales",
       "ejercicios": [
         {
           "id": "e1",
-          "nombre": "Sentadilla Búlgara",
-          "series": 4,
-          "repeticiones": "8-10/p",
-          "nota": "Pie trasero en cajón/banco · Mancuernas a los lados · Tempo 3-0-1-0 · Torso ligeramente inclinado · 7.5kg o 10kg",
-          "peso_default": 7.5,
+          "nombre": "Flexiones de Brazo",
+          "series": 3,
+          "repeticiones": "Fallo",
+          "nota": "Series de calentamiento previas. Realizarlas con 3 segundos de negativa (excéntrica) y 1 segundo de concéntrica.",
+          "peso_default": null,
           "historico": []
         },
         {
           "id": "e2",
-          "nombre": "Sentadilla Goblet",
-          "series": 4,
-          "repeticiones": "10-12",
-          "nota": "Peso al pecho abrazado · Torso erguido · Tempo 3-1-1-0 · Pausa de 1s en el punto más profundo · Bolsa 25kg o mancuerna pesada",
-          "peso_default": 25,
+          "nombre": "Press Inclinado Barra",
+          "series": 3,
+          "repeticiones": "Fallo",
+          "nota": "Series de calentamiento previas. Realizarlas con 3 segundos de negativa (excéntrica) y 1 segundo de concéntrica.",
+          "peso_default": 30,
           "historico": []
         },
         {
           "id": "e3",
-          "nombre": "Puente de Glúteos Unilateral",
+          "nombre": "Apertura Plana",
           "series": 3,
-          "repeticiones": "12-15/p",
-          "nota": "Espalda en el suelo/colchoneta · Talón activo · Tempo 2-0-2-0 · Sostén 2s arriba apretando glúteos e isquios",
-          "peso_default": null,
+          "repeticiones": "10",
+          "nota": "Concentrado. Isométrico un segundo en extensión y un segundo en contracción.",
+          "peso_default": 12.5,
           "historico": []
         },
         {
           "id": "e4",
-          "nombre": "Plancha Abdominal Prone (Core)",
+          "nombre": "Vuelos Laterales",
           "series": 3,
-          "repeticiones": "45-60s",
-          "nota": "Colchoneta · Contracción activa apretando glúteos y cuádriceps · Corsé natural para blindar la lumbar · No dejar caer la pelvis",
-          "peso_default": null,
+          "repeticiones": "12",
+          "nota": "Añadir DROPSET en la última serie.",
+          "peso_default": 6,
           "historico": []
         },
         {
           "id": "e5",
-          "nombre": "Elevación de Talones de Pie (Gemelos)",
+          "nombre": "Vuelos Frontales",
           "series": 3,
-          "repeticiones": "15-20",
-          "nota": "De pie con mancuernas a los lados · Punta del pie sobre disco/escalón para mayor rango · Tempo 2-1-1-1 · 1s de contracción arriba y 1s de estiramiento abajo · Mancuernas 15kg",
-          "peso_default": 15,
+          "repeticiones": "Fallo",
+          "nota": "",
+          "peso_default": 6,
+          "historico": []
+        },
+        {
+          "id": "e6",
+          "nombre": "Press Francés",
+          "series": 3,
+          "repeticiones": "8 a 12",
+          "nota": "",
+          "peso_default": 7.5,
+          "historico": []
+        },
+        {
+          "id": "e7",
+          "nombre": "Copa Tricep Mancuerna Unilateral",
+          "series": 3,
+          "repeticiones": "12",
+          "nota": "",
+          "peso_default": 7.5,
+          "historico": []
+        },
+        {
+          "id": "e8",
+          "nombre": "Plancha Abdominal",
+          "series": 3,
+          "repeticiones": "30s",
+          "nota": "",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e9",
+          "nombre": "Plancha Laterales",
+          "series": 3,
+          "repeticiones": "30s",
+          "nota": "",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e10",
+          "nombre": "Crunchs Boca Arriba",
+          "series": 3,
+          "repeticiones": "Fallo",
+          "nota": "Las que puedas.",
+          "peso_default": null,
           "historico": []
         }
       ]
     },
     "d2": {
       "label": "Día 2",
-      "tag": "Torso A · Pecho y Hombro Anterior/Lateral",
-      "sub": "Empujes con soporte lumbar · Control excéntrico brutal",
+      "tag": "Tracción + Gemelos",
+      "sub": "Enfoque en espalda, lumbares, bíceps y pantorrillas",
       "ejercicios": [
         {
           "id": "e1",
-          "nombre": "Press Inclinado con Mancuernas",
-          "series": 4,
-          "repeticiones": "8-12",
-          "nota": "Banco a 30° · Tempo 3-0-1-0 · Mancuernas 12.5kg o 15kg",
+          "nombre": "Remo Barra Abierto",
+          "series": 3,
+          "repeticiones": "8 a 12",
+          "nota": "Series de calentamiento previas. Realizarlas con 3 segundos de negativa y 1 segundo de concéntrica.",
           "peso_default": 12.5,
           "historico": []
         },
         {
           "id": "e2",
-          "nombre": "Press Militar Sentado",
+          "nombre": "Remo Serrucho con Mancuerna",
           "series": 3,
-          "repeticiones": "8-12",
-          "nota": "Soporte lumbar en el banco a 90° · Tempo 3-0-1-0 · Barra 20kg o mancuernas 10-12.5kg",
-          "peso_default": 20,
+          "repeticiones": "10 a 15",
+          "nota": "",
+          "peso_default": 12.5,
           "historico": []
         },
         {
           "id": "e3",
-          "nombre": "Flexiones de Brazos",
+          "nombre": "Pull Over Acostado",
           "series": 3,
-          "repeticiones": "∞",
-          "nota": "Al fallo técnico (RIR 1) · Tempo 3-0-1-0 · Control excéntrico brutal · Última repetición limpia siempre",
-          "peso_default": null,
+          "repeticiones": "15",
+          "nota": "",
+          "peso_default": 12.5,
           "historico": []
         },
         {
           "id": "e4",
-          "nombre": "Aperturas con Mancuernas",
+          "nombre": "Espinales",
           "series": 3,
-          "repeticiones": "12-15",
-          "nota": "Banco plano o inclinado suave (15-30°) · Codos semiflexionados fijos · Tempo 3-0-1-0 · Gran estiramiento del pectoral en la fase baja · Aislamiento para complementar el Press Inclinado · Mancuernas 7.5kg",
-          "peso_default": 7.5,
+          "repeticiones": "15",
+          "nota": "",
+          "peso_default": null,
           "historico": []
         },
         {
           "id": "e5",
-          "nombre": "Vuelos Laterales con Mancuernas",
-          "series": 4,
-          "repeticiones": "12-15",
-          "nota": "De pie o sentado · Tempo 2-0-1-1 · Pausa de 1s arriba aguantando el peso · Mancuernas 5kg o 6kg",
-          "peso_default": 5,
+          "nombre": "Curl Bicep Barra Parado",
+          "series": 3,
+          "repeticiones": "10 a 15",
+          "nota": "Concentrado. Isométrico un segundo en extensión y un segundo en contracción.",
+          "peso_default": 10,
           "historico": []
         },
         {
           "id": "e6",
-          "nombre": "Extensión de Tríceps con Mancuerna (una mano)",
+          "nombre": "Curl Bicep Martillo Sentado",
           "series": 3,
-          "repeticiones": "10-12/p",
-          "nota": "De pie o sentado · Brazo extendido arriba, codo fijo apuntando al techo · Bajada controlada por detrás de la cabeza · Tempo 3-0-1-0 · Mancuerna 7.5kg o 10kg",
-          "peso_default": 7.5,
+          "repeticiones": "15 a 20",
+          "nota": "Concentrado. Isométrico un segundo en extensión y un segundo en contracción.",
+          "peso_default": 10,
+          "historico": []
+        },
+        {
+          "id": "e7",
+          "nombre": "Vuelos Posteriores Inclinado",
+          "series": 3,
+          "repeticiones": "15 a 20",
+          "nota": "",
+          "peso_default": 6,
+          "historico": []
+        },
+        {
+          "id": "e8",
+          "nombre": "Elevación de Talón Unilateral con Mancuerna",
+          "series": 1,
+          "repeticiones": "50/p",
+          "nota": "1 serie de 50 repeticiones con cada pierna.",
+          "peso_default": 15,
           "historico": []
         }
       ]
     },
     "d3": {
       "label": "Día 3",
-      "tag": "Tracción · Espalda y Bíceps",
-      "sub": "Cero estrés lumbar · Sin carga axial · Densidad en la espalda",
+      "tag": "Piernas + Core",
+      "sub": "Enfoque en cuádriceps, femorales, glúteos y abdominales",
       "ejercicios": [
         {
           "id": "e1",
-          "nombre": "Remo con Pecho Apoyado en Banco",
-          "series": 4,
-          "repeticiones": "10-12",
-          "nota": "Banco inclinado 30-45° · Pecho apoyado, el banco absorbe el peso · Esfuerzo 100% en espalda alta · Tempo 3-0-1-0 · Mancuernas 12.5kg o 15kg",
-          "peso_default": 12.5,
+          "nombre": "Salto al Cajón + Sentadilla",
+          "series": 3,
+          "repeticiones": "8 a 12",
+          "nota": "Saltar al cajón y realizar una sentadilla sobre el mismo cuenta como una repetición (hacer las que puedas).",
+          "peso_default": null,
           "historico": []
         },
         {
           "id": "e2",
-          "nombre": "Remo Unilateral con Mancuerna",
+          "nombre": "Curl Femoral Acostado con Mancuerna",
           "series": 3,
-          "repeticiones": "8-12/p",
-          "nota": "Mano y rodilla apoyadas en banco plano · Tempo 3-0-1-1 · Apretá el dorsal 1s atrás antes de bajar · Mancuerna 15kg",
+          "repeticiones": "15 a 20",
+          "nota": "Acostado boca abajo sosteniendo una mancuerna entre los pies. Bajar controlando el peso (3 segundos de fase excéntrica).",
           "peso_default": 15,
           "historico": []
         },
         {
           "id": "e3",
-          "nombre": "Pullover con Mancuerna",
+          "nombre": "Estocada",
           "series": 3,
-          "repeticiones": "10-12",
-          "nota": "Acostado boca arriba en banco plano · Tempo 3-0-1-0 · Estiramiento máximo del dorsal · Mancuerna 12.5kg o 15kg",
-          "peso_default": 12.5,
+          "repeticiones": "8 a 12",
+          "nota": "Realizarla con mancuernas. Peso asignado para ejercicio unilateral.",
+          "peso_default": 15,
           "historico": []
         },
         {
           "id": "e4",
-          "nombre": "Curl de Bíceps Alterno",
+          "nombre": "Sentadilla Sumo",
           "series": 3,
-          "repeticiones": "10-12",
-          "nota": "Sentado o de pie · Tempo 3-0-1-0 · Sin balanceo · Supinación completa arriba · Mancuernas 7.5kg o 10kg",
-          "peso_default": 7.5,
+          "repeticiones": "8 a 15",
+          "nota": "Ejercicio bilateral.",
+          "peso_default": 30,
           "historico": []
         },
         {
           "id": "e5",
-          "nombre": "Curl Martillo",
+          "nombre": "Elevación de Cadera Talones en el Cajón",
           "series": 3,
-          "repeticiones": "10-12",
-          "nota": "De pie · Agarre neutro (palmas enfrentadas) · Tempo 3-0-1-0 · Alterno o simultáneo · Trabaja braquial y braquiorradial para grosor del brazo · Mancuernas 7.5kg o 10kg",
-          "peso_default": 7.5,
+          "repeticiones": "Fallo",
+          "nota": "Hacer las repeticiones que puedas.",
+          "peso_default": 30,
+          "historico": []
+        },
+        {
+          "id": "e6",
+          "nombre": "Plancha Abdominal",
+          "series": 3,
+          "repeticiones": "30s",
+          "nota": "",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e7",
+          "nombre": "Plancha Laterales",
+          "series": 3,
+          "repeticiones": "30s",
+          "nota": "",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e8",
+          "nombre": "Crunchs Boca Arriba",
+          "series": 3,
+          "repeticiones": "Fallo",
+          "nota": "Las que puedas.",
+          "peso_default": null,
           "historico": []
         }
       ]
     },
     "d4": {
       "label": "Día 4",
-      "tag": "Piernas B · Cadena Posterior y Estabilidad",
-      "sub": "Isquios · Glúteo · Anti-rotación lumbar",
+      "tag": "Full Body Superior + Gemelos",
+      "sub": "Circuito integrado de torso superior y pantorrillas",
       "ejercicios": [
         {
           "id": "e1",
-          "nombre": "Peso Muerto Rumano (RDL) con Mancuernas",
-          "series": 4,
-          "repeticiones": "8-10",
-          "nota": "De pie con mancuernas al frente · Bisagra de cadera (cadera atrás, torso neutro) · Rodillas levemente flexionadas · Bajada controlada rozando los muslos hasta media caña · Tempo 3-0-1-0 · Sentir estiramiento en isquios, no lumbar · Mancuernas 12.5kg o 15kg",
+          "nombre": "Flexiones de Brazo + Remo Unilateral",
+          "series": 3,
+          "repeticiones": "Fallo",
+          "nota": "Series de calentamiento previas. Una flexión + Un remo con cada brazo cuenta como 1 sola repetición (hacer las que puedas).",
           "peso_default": 12.5,
           "historico": []
         },
         {
           "id": "e2",
-          "nombre": "Sentadilla Búlgara con Déficit Ligero",
+          "nombre": "Espinales",
           "series": 3,
-          "repeticiones": "10/p",
-          "nota": "Pie delantero sobre disco/superficie pequeña para más rango · Pie trasero en cajón · Mancuernas 7.5kg · Tempo 3-0-1-0",
-          "peso_default": 7.5,
-          "historico": []
-        },
-        {
-          "id": "e3",
-          "nombre": "Subidas al Cajón (Step-ups)",
-          "series": 3,
-          "repeticiones": "10/p",
-          "nota": "Cajón a altura de rodilla · Bajada controlada en 3s tocando el piso con la punta sin dejarse caer · Mancuernas 7.5kg a los lados",
-          "peso_default": 7.5,
-          "historico": []
-        },
-        {
-          "id": "e4",
-          "nombre": "Bird-Dog (Core Anti-rotación)",
-          "series": 3,
-          "repeticiones": "10/p",
-          "nota": "En cuadrupedia en colchoneta · 3s de sostén arriba en cada extensión · Cadera cuadrada · Clave para rehabilitar y fortalecer la lumbar",
+          "repeticiones": "15",
+          "nota": "",
           "peso_default": null,
           "historico": []
         },
         {
-          "id": "e5",
-          "nombre": "Elevación de Talones de Pie (Gemelos)",
+          "id": "e3",
+          "nombre": "Press Inclinado",
           "series": 3,
-          "repeticiones": "15-20",
-          "nota": "De pie con mancuernas a los lados · Punta del pie sobre disco/escalón para mayor rango · Tempo 2-1-1-1 · 1s de contracción arriba y 1s de estiramiento abajo · Mancuernas 15kg",
+          "repeticiones": "12",
+          "nota": "",
+          "peso_default": 30,
+          "historico": []
+        },
+        {
+          "id": "e4",
+          "nombre": "Press Militar Barra",
+          "series": 3,
+          "repeticiones": "8 a 12",
+          "nota": "Pesado",
+          "peso_default": 20,
+          "historico": []
+        },
+        {
+          "id": "e5",
+          "nombre": "Vuelos Laterales",
+          "series": 3,
+          "repeticiones": "12 a 15",
+          "nota": "",
+          "peso_default": 6,
+          "historico": []
+        },
+        {
+          "id": "e6",
+          "nombre": "Vuelos Frontales",
+          "series": 3,
+          "repeticiones": "Fallo",
+          "nota": "Hacer las repeticiones que puedas.",
+          "peso_default": 6,
+          "historico": []
+        },
+        {
+          "id": "e7",
+          "nombre": "Bicep Martillo",
+          "series": 3,
+          "repeticiones": "15",
+          "nota": "",
+          "peso_default": 10,
+          "historico": []
+        },
+        {
+          "id": "e8",
+          "nombre": "Press Francés",
+          "series": 3,
+          "repeticiones": "12",
+          "nota": "",
+          "peso_default": 7.5,
+          "historico": []
+        },
+        {
+          "id": "e9",
+          "nombre": "Elevación de Talón Unilateral con Mancuerna",
+          "series": 1,
+          "repeticiones": "50/p",
+          "nota": "1 serie de 50 repeticiones con cada pierna.",
           "peso_default": 15,
           "historico": []
         }
@@ -221,83 +347,83 @@
     },
     "d5": {
       "label": "Día 5",
-      "tag": "Torso B · Volumen Hombros, Pecho y Tríceps",
-      "sub": "Hipertrofia · Rango completo · Drop-set final · Cierre con core",
+      "tag": "Tren Inferior (Piernas 2) + Core",
+      "sub": "Enfoque en potencia, tren inferior y abdominales",
       "ejercicios": [
         {
           "id": "e1",
-          "nombre": "Vuelos Laterales",
-          "series": 4,
-          "repeticiones": "15-20",
-          "nota": "De pie · Tempo 2-0-1-1 · Última serie en Drop-set al fallo (bajás peso y seguís sin descanso) · Mancuernas 4kg o 5kg",
-          "peso_default": 5,
+          "nombre": "Sentadilla con Salto (C/Mancuerna)",
+          "series": 3,
+          "repeticiones": "8 a 12",
+          "nota": "Saltar con los brazos a los costados sosteniendo una mancuerna con cada uno. Ejercicio con mancuernas (bilateral total).",
+          "peso_default": 30,
           "historico": []
         },
         {
           "id": "e2",
-          "nombre": "Aperturas con Mancuernas",
+          "nombre": "Estocada Búlgara con Barra",
           "series": 3,
-          "repeticiones": "12-15",
-          "nota": "Banco plano o inclinado suave · Codos semiflexionados fijos · Tempo 3-0-1-0 · Gran estiramiento del pectoral en la fase baja · Alternativa: Flexiones con déficit sobre discos",
-          "peso_default": 7.5,
+          "repeticiones": "8 a 12",
+          "nota": "Concentrado. Peso asignado para ejercicio unilateral.",
+          "peso_default": 15,
           "historico": []
         },
         {
           "id": "e3",
-          "nombre": "Copa de Tríceps a Dos Manos",
+          "nombre": "Curl Femoral Acostado con Mancuerna",
           "series": 3,
-          "repeticiones": "10-12",
-          "nota": "Sentado o de pie · Mancuerna pesada por detrás de la cabeza sujeta con ambas manos · Codos fijos apuntando al techo · Tempo 3-0-1-0 · Mancuerna 12.5kg o 15kg",
-          "peso_default": 12.5,
+          "repeticiones": "15 a 20",
+          "nota": "Acostado boca abajo sosteniendo una mancuerna entre los pies. Bajar controlando el peso (3 segundos de fase excéntrica).",
+          "peso_default": 15,
           "historico": []
         },
         {
           "id": "e4",
-          "nombre": "Vuelos Posteriores (Pájaros)",
+          "nombre": "Sentadilla Sumo",
           "series": 3,
-          "repeticiones": "12-15",
-          "nota": "Sentado, torso inclinado sobre los muslos · Tempo 2-0-1-1 · Retracción escapular al final · Mancuernas 4kg o 5kg",
-          "peso_default": 4,
+          "repeticiones": "8 a 12",
+          "nota": "Ejercicio bilateral.",
+          "peso_default": 30,
           "historico": []
         },
         {
           "id": "e5",
-          "nombre": "Plancha Lateral (Core Anti-flexión Lateral)",
+          "nombre": "Elevación de Cadera con Barra + Abducción",
           "series": 3,
-          "repeticiones": "30-45s/lado",
-          "nota": "Colchoneta · Apoyo en antebrazo y canto del pie · Cadera bien alta formando línea recta hombro-cadera-tobillo · Aprieta glúteo y oblicuo del lado bajo · Progresión: si sobra, elevar el brazo libre al techo · Completa el corsé lumbar (anti-flexión lateral) que no cubren la plancha frontal del Día 1 ni el Bird-Dog del Día 4",
-          "peso_default": null,
+          "repeticiones": "8 a 12",
+          "nota": "Concentrado. Para la abducción deberás ponerte una banda en las rodillas. Ejercicio bilateral.",
+          "peso_default": 30,
           "historico": []
         },
         {
           "id": "e6",
-          "nombre": "Dead Bug (Core Anti-extensión)",
+          "nombre": "Plancha Abdominal",
           "series": 3,
-          "repeticiones": "8-10/lado",
-          "nota": "Boca arriba en colchoneta · Lumbar pegada al piso todo el tiempo (sin arco) · Extendé brazo y pierna contralaterales bajando lento en 3s sin tocar el piso · Volvé al centro y alterná · Respiración: exhalá al extender · Cero estrés lumbar y perfecto para bajar pulsaciones al cierre del día",
+          "repeticiones": "30s",
+          "nota": "",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e7",
+          "nombre": "Plancha Laterales",
+          "series": 3,
+          "repeticiones": "30s",
+          "nota": "",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e8",
+          "nombre": "Crunchs Boca Arriba",
+          "series": 3,
+          "repeticiones": "Fallo",
+          "nota": "Las que puedas.",
           "peso_default": null,
           "historico": []
         }
       ]
-    },
-    "d6": {
-      "label": "Día 6",
-      "tag": "Descanso",
-      "sub": "Día de descanso",
-      "ejercicios": []
-    },
-    "d7": {
-      "label": "Día 7",
-      "tag": "Descanso",
-      "sub": "Día de descanso",
-      "ejercicios": []
     }
   },
-  "semanas": {
-    "s1": { "label": "Semana 1", "pesos": {} },
-    "s2": { "label": "Semana 2", "pesos": {} },
-    "s3": { "label": "Semana 3", "pesos": {} },
-    "s4": { "label": "Semana 4", "pesos": {} }
-  },
-  "ultima_actualizacion": "2026-08-10"
+  "ultima_actualizacion": "2026-09-09"
 }
