@@ -1,1 +1,267 @@
-{ "rutina": "Rutina de Fuerza Personalizada Hernan (v4)", "descripcion": "Rutina de 5 días (\~45-50 min/día) · Entrenamientos en casa · Adaptada a mancuernas (hasta 15kg), barra (30kg sin rack), banco multiangular, banco hip thrust, pelota de yoga, bandas, cajón de salto y Abmat", "ejercicios": { "d1": { "label": "Día 1", "tag": "Pecho &amp; Espalda Alta (Antagonistas)", "sub": "Enfoque en pectoral, espalda alta y deltoides · \~45-50 min", "ejercicios": [ { "id": "e1", "nombre": "Press Inclinado (30°-45°) con Mancuernas", "series": 3, "repeticiones": "12 a 15", "nota": "Énfasis en pectoral superior. Bajada en 3s abriendo codos a 45°. Tempo 3-0-1-1\. Descanso: 60s.", "peso\_default": 15, "historico": [] }, { "id": "e2", "nombre": "Remo en Banco Multiangular con Mancuernas", "series": 3, "repeticiones": "12 a 15", "nota": "Pecho apoyado a 45°. Tracción hacia la cadera sin sobrecargar lumbar. Tempo 3-0-1-1\. Descanso: 60s.", "peso\_default": 15, "historico": [] }, { "id": "e3", "nombre": "Floor Press o Press Plano (Barra / Mancuernas)", "series": 3, "repeticiones": "15 a 20", "nota": "Entrada segura desde piso/banco. Tensión constante sin bloquear codos. Tempo 3-0-1-0\. Descanso: 60s.", "peso\_default": 30, "historico": [] }, { "id": "e4", "nombre": "Jalón al Pecho / Pulldown con Banda", "series": 3, "repeticiones": "15 a 20", "nota": "Banda anclada arriba. Tracción al esternón apretando dorsales 1s. Tempo 3-1-1-1\. Descanso: 45s.", "peso\_default": null, "historico": [] }, { "id": "e5", "nombre": "Cruces o Aperturas con Banda / Mancuernas", "series": 3, "repeticiones": "15 a 20", "nota": "Aislamiento y congestión final de pectoral sin forzar articulación. Tempo 2-0-1-1\. Descanso: 45s.", "peso\_default": null, "historico": [] } ] }, "d2": { "label": "Día 2", "tag": "Piernas — Cuádriceps &amp; Glúteos", "sub": "Enfoque en tren inferior, glúteos y pantorrillas · \~45-50 min", "ejercicios": [ { "id": "e1", "nombre": "Hip Thrust en Banco Específico (Barra / Mancuerna)", "series": 4, "repeticiones": "12 a 15", "nota": "Pausa de 2s en la máxima extensión de cadera apretando glúteos. Con barra (30kg) o mancuerna (15kg). Tempo 2-1-1-2\. Descanso: 60s.", "peso\_default": 30, "historico": [] }, { "id": "e2", "nombre": "Sentadilla Búlgara (Pie en Cajón o Banco)", "series": 3, "repeticiones": "12 a 15 p/p", "nota": "Bajar profundo con rodilla trasera rozando el piso. Trabajo unilateral intenso. Tempo 3-0-1-0\. Descanso: 60s.", "peso\_default": 15, "historico": [] }, { "id": "e3", "nombre": "Step-ups (Subidas al Cajón con Mancuernas)", "series": 3, "repeticiones": "12 a 15 p/p", "nota": "Empuje exclusivo con el pie apoyado en el cajón sin dar impulso con el otro. Tempo 2-0-1-1\. Descanso: 60s.", "peso\_default": 15, "historico": [] }, { "id": "e4", "nombre": "Goblet Squat (Sentadilla Goblet con Mancuerna)", "series": 3, "repeticiones": "15 a 20", "nota": "Mancuerna pegada al pecho (15kg), bajada profunda manteniendo torso erguido. Tempo 3-0-1-1\. Descanso: 60s.", "peso\_default": 15, "historico": [] }, { "id": "e5", "nombre": "Elevación de Talones en Borde de Cajón", "series": 3, "repeticiones": "15 a 20", "nota": "Rango completo bajando el talón para máximo estiramiento de pantorrillas. Tempo 2-1-1-1\. Descanso: 45s.", "peso\_default": null, "historico": [] } ] }, "d3": { "label": "Día 3", "tag": "Brazos (Bíceps &amp; Tríceps) &amp; Core", "sub": "Enfoque en brazos y zona media con Abmat y Pelota de Yoga · \~40-45 min", "ejercicios": [ { "id": "e1", "nombre": "French Press Inclinado con Mancuernas", "series": 3, "repeticiones": "12 a 15", "nota": "En banco inclinado a 30°-45°. Máximo estiramiento de cabeza larga de tríceps. Tempo 3-0-1-1\. Descanso: 60s.", "peso\_default": 15, "historico": [] }, { "id": "e2", "nombre": "Curl de Bíceps Inclinado en Banco Multiangular", "series": 3, "repeticiones": "12 a 15", "nota": "Codos fijos atrás. Estiramiento completo de bíceps al bajar. Tempo 3-0-1-1\. Descanso: 60s.", "peso\_default": 15, "historico": [] }, { "id": "e3", "nombre": "Extensión de Tríceps sobre Cabeza con Banda", "series": 3, "repeticiones": "15 a 20", "nota": "Tensión continua en tríceps con codos cerrados. Tempo 2-0-1-1\. Descanso: 45s.", "peso\_default": null, "historico": [] }, { "id": "e4", "nombre": "Curl Martillo con Mancuernas", "series": 3, "repeticiones": "12 a 15", "nota": "Agarre neutro. Enfoca el braquial anterior y antebrazo. Tempo 3-0-1-1\. Descanso: 45s.", "peso\_default": 15, "historico": [] }, { "id": "e5", "nombre": "Crunches sobre Abmat + Plancha en Pelota de Yoga", "series": 3, "repeticiones": "15 a 20 / 45s", "nota": "Abmat apoya curvatura lumbar. Plancha sobre pelota genera inestabilidad activa. Tempo 2-1-1-0\. Descanso: 45s.", "peso\_default": null, "historico": [] } ] }, "d4": { "label": "Día 4", "tag": "Hombros, Espalda &amp; Postura", "sub": "Enfoque en deltoides, tracciones y salud postural · \~45-50 min", "ejercicios": [ { "id": "e1", "nombre": "Press Arnold / Press Militar Sentado (Mancuernas)", "series": 3, "repeticiones": "12 a 15", "nota": "En banco multiangular vertical. Rotación fluida para deltoides anterior/medio. Tempo 3-0-1-1\. Descanso: 60s.", "peso\_default": 15, "historico": [] }, { "id": "e2", "nombre": "Remo Horizontal con Barra o Mancuerna", "series": 3, "repeticiones": "12 a 15", "nota": "Tracción potente apretando escápulas al final de la fase concéntrica. Tempo 3-1-1-1\. Descanso: 60s.", "peso\_default": 30, "historico": [] }, { "id": "e3", "nombre": "Elevaciones Laterales con Mancuernas / Banda", "series": 4, "repeticiones": "15 a 20", "nota": "Enfocado en deltoides lateral. Control en la bajada sin balancear el cuerpo. Tempo 2-0-1-1\. Descanso: 45s.", "peso\_default": 15, "historico": [] }, { "id": "e4", "nombre": "Pullover con Mancuerna en Banco o Pelota de Yoga", "series": 3, "repeticiones": "12 a 15", "nota": "Estiramiento profundo de dorsales y caja torácica. Codos ligeramente flexionados. Tempo 3-1-1-0\. Descanso: 60s.", "peso\_default": 15, "historico": [] }, { "id": "e5", "nombre": "Face Pulls / Pájaros con Banda de Resistencia", "series": 3, "repeticiones": "15 a 20", "nota": "Anclaje a la altura de la cabeza. Tracción a ojos abriendo codos para deltoides posterior. Tempo 2-1-1-1\. Descanso: 45s.", "peso\_default": null, "historico": [] } ] }, "d5": { "label": "Día 5", "tag": "Piernas (Cadena Posterior) &amp; Remate Final", "sub": "Enfoque en isquiotibiales, glúteos y congestión final de torso · \~45-50 min", "ejercicios": [ { "id": "e1", "nombre": "Peso Muerto Rumano (Barra / Mancuernas)", "series": 4, "repeticiones": "12 a 15", "nota": "Llevar cadera atrás manteniendo espalda recta hasta sentir tensión en isquiotibiales. Tempo 3-1-1-0\. Descanso: 60s.", "peso\_default": 30, "historico": [] }, { "id": "e2", "nombre": "Curl Femoral en Pelota Grande de Yoga", "series": 3, "repeticiones": "12 a 15", "nota": "Acostado boca arriba, elevar cadera y rodar la pelota trayendo talones hacia glúteos. Tempo 2-1-1-1\. Descanso: 45s.", "peso\_default": null, "historico": [] }, { "id": "e3", "nombre": "Hip Thrust Unilateral o con Banda de Resistencia", "series": 3, "repeticiones": "15 a 20 p/p", "nota": "Aislamiento de glúteo medio y mayor sin sobrecargar con peso. Tempo 2-1-1-1\. Descanso: 45s.", "peso\_default": null, "historico": [] }, { "id": "e4", "nombre": "Superset: Push-ups en Banco + Remo con Banda", "series": 3, "repeticiones": "15 a 20", "nota": "Flexiones de pecho inclinadas/planas seguidas inmediatamente de remo con banda. Tempo 2-0-1-0\. Descanso: 45s.", "peso\_default": null, "historico": [] }, { "id": "e5", "nombre": "Superset Final: Curl con Banda + Flexiones Diamante", "series": 3, "repeticiones": "15 a 20", "nota": "Congestión total de bíceps y tríceps para cerrar la semana. Tempo 2-0-1-0\. Descanso: 45s.", "peso\_default": null, "historico": [] } ] } }, "ultima\_actualizacion": "2026-10-15" }
+{
+  "rutina": "Rutina de Fuerza Personalizada Hernan (v4)",
+  "descripcion": "Rutina de 5 días (~45-50 min/día) · Entrenamientos en casa · Adaptada a mancuernas (hasta 15kg), barra (30kg sin rack), banco multiangular, banco hip thrust, pelota de yoga, bandas, cajón de salto y Abmat",
+  "ejercicios": {
+    "d1": {
+      "label": "Día 1",
+      "tag": "Pecho & Espalda Alta (Antagonistas)",
+      "sub": "Enfoque en pectoral, espalda alta y deltoides · ~45-50 min",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "nombre": "Press Inclinado (30°-45°) con Mancuernas",
+          "series": 3,
+          "repeticiones": "12 a 15",
+          "nota": "Énfasis en pectoral superior. Bajada en 3s abriendo codos a 45°. Tempo 3-0-1-1. Descanso: 60s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e2",
+          "nombre": "Remo en Banco Multiangular con Mancuernas",
+          "series": 3,
+          "repeticiones": "12 a 15",
+          "nota": "Pecho apoyado a 45°. Tracción hacia la cadera sin sobrecargar lumbar. Tempo 3-0-1-1. Descanso: 60s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e3",
+          "nombre": "Floor Press o Press Plano (Barra / Mancuernas)",
+          "series": 3,
+          "repeticiones": "15 a 20",
+          "nota": "Entrada segura desde piso/banco. Tensión constante sin bloquear codos. Tempo 3-0-1-0. Descanso: 60s.",
+          "peso_default": 30,
+          "historico": []
+        },
+        {
+          "id": "e4",
+          "nombre": "Jalón al Pecho / Pulldown con Banda",
+          "series": 3,
+          "repeticiones": "15 a 20",
+          "nota": "Banda anclada arriba. Tracción al esternón apretando dorsales 1s. Tempo 3-1-1-1. Descanso: 45s.",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e5",
+          "nombre": "Cruces o Aperturas con Banda / Mancuernas",
+          "series": 3,
+          "repeticiones": "15 a 20",
+          "nota": "Aislamiento y congestión final de pectoral sin forzar articulación. Tempo 2-0-1-1. Descanso: 45s.",
+          "peso_default": null,
+          "historico": []
+        }
+      ]
+    },
+    "d2": {
+      "label": "Día 2",
+      "tag": "Piernas — Cuádriceps & Glúteos",
+      "sub": "Enfoque en tren inferior, glúteos y pantorrillas · ~45-50 min",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "nombre": "Hip Thrust en Banco Específico (Barra / Mancuerna)",
+          "series": 4,
+          "repeticiones": "12 a 15",
+          "nota": "Pausa de 2s en la máxima extensión de cadera apretando glúteos. Con barra (30kg) o mancuerna (15kg). Tempo 2-1-1-2. Descanso: 60s.",
+          "peso_default": 30,
+          "historico": []
+        },
+        {
+          "id": "e2",
+          "nombre": "Sentadilla Búlgara (Pie en Cajón o Banco)",
+          "series": 3,
+          "repeticiones": "12 a 15 p/p",
+          "nota": "Bajar profundo con rodilla trasera rozando el piso. Trabajo unilateral intenso. Tempo 3-0-1-0. Descanso: 60s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e3",
+          "nombre": "Step-ups (Subidas al Cajón con Mancuernas)",
+          "series": 3,
+          "repeticiones": "12 a 15 p/p",
+          "nota": "Empuje exclusivo con el pie apoyado en el cajón sin dar impulso con el otro. Tempo 2-0-1-1. Descanso: 60s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e4",
+          "nombre": "Goblet Squat (Sentadilla Goblet con Mancuerna)",
+          "series": 3,
+          "repeticiones": "15 a 20",
+          "nota": "Mancuerna pegada al pecho (15kg), bajada profunda manteniendo torso erguido. Tempo 3-0-1-1. Descanso: 60s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e5",
+          "nombre": "Elevación de Talones en Borde de Cajón",
+          "series": 3,
+          "repeticiones": "15 a 20",
+          "nota": "Rango completo bajando el talón para máximo estiramiento de pantorrillas. Tempo 2-1-1-1. Descanso: 45s.",
+          "peso_default": null,
+          "historico": []
+        }
+      ]
+    },
+    "d3": {
+      "label": "Día 3",
+      "tag": "Brazos (Bíceps & Tríceps) & Core",
+      "sub": "Enfoque en brazos y zona media con Abmat y Pelota de Yoga · ~40-45 min",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "nombre": "French Press Inclinado con Mancuernas",
+          "series": 3,
+          "repeticiones": "12 a 15",
+          "nota": "En banco inclinado a 30°-45°. Máximo estiramiento de cabeza larga de tríceps. Tempo 3-0-1-1. Descanso: 60s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e2",
+          "nombre": "Curl de Bíceps Inclinado en Banco Multiangular",
+          "series": 3,
+          "repeticiones": "12 a 15",
+          "nota": "Codos fijos atrás. Estiramiento completo de bíceps al bajar. Tempo 3-0-1-1. Descanso: 60s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e3",
+          "nombre": "Extensión de Tríceps sobre Cabeza con Banda",
+          "series": 3,
+          "repeticiones": "15 a 20",
+          "nota": "Tensión continua en tríceps con codos cerrados. Tempo 2-0-1-1. Descanso: 45s.",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e4",
+          "nombre": "Curl Martillo con Mancuernas",
+          "series": 3,
+          "repeticiones": "12 a 15",
+          "nota": "Agarre neutro. Enfoca el braquial anterior y antebrazo. Tempo 3-0-1-1. Descanso: 45s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e5",
+          "nombre": "Crunches sobre Abmat + Plancha en Pelota de Yoga",
+          "series": 3,
+          "repeticiones": "15 a 20 / 45s",
+          "nota": "Abmat apoya curvatura lumbar. Plancha sobre pelota genera inestabilidad activa. Tempo 2-1-1-0. Descanso: 45s.",
+          "peso_default": null,
+          "historico": []
+        }
+      ]
+    },
+    "d4": {
+      "label": "Día 4",
+      "tag": "Hombros, Espalda & Postura",
+      "sub": "Enfoque en deltoides, tracciones y salud postural · ~45-50 min",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "nombre": "Press Arnold / Press Militar Sentado (Mancuernas)",
+          "series": 3,
+          "repeticiones": "12 a 15",
+          "nota": "En banco multiangular vertical. Rotación fluida para deltoides anterior/medio. Tempo 3-0-1-1. Descanso: 60s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e2",
+          "nombre": "Remo Horizontal con Barra o Mancuerna",
+          "series": 3,
+          "repeticiones": "12 a 15",
+          "nota": "Tracción potente apretando escápulas al final de la fase concéntrica. Tempo 3-1-1-1. Descanso: 60s.",
+          "peso_default": 30,
+          "historico": []
+        },
+        {
+          "id": "e3",
+          "nombre": "Elevaciones Laterales con Mancuernas / Banda",
+          "series": 4,
+          "repeticiones": "15 a 20",
+          "nota": "Enfocado en deltoides lateral. Control en la bajada sin balancear el cuerpo. Tempo 2-0-1-1. Descanso: 45s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e4",
+          "nombre": "Pullover con Mancuerna en Banco o Pelota de Yoga",
+          "series": 3,
+          "repeticiones": "12 a 15",
+          "nota": "Estiramiento profundo de dorsales y caja torácica. Codos ligeramente flexionados. Tempo 3-1-1-0. Descanso: 60s.",
+          "peso_default": 15,
+          "historico": []
+        },
+        {
+          "id": "e5",
+          "nombre": "Face Pulls / Pájaros con Banda de Resistencia",
+          "series": 3,
+          "repeticiones": "15 a 20",
+          "nota": "Anclaje a la altura de la cabeza. Tracción a ojos abriendo codos para deltoides posterior. Tempo 2-1-1-1. Descanso: 45s.",
+          "peso_default": null,
+          "historico": []
+        }
+      ]
+    },
+    "d5": {
+      "label": "Día 5",
+      "tag": "Piernas (Cadena Posterior) & Remate Final",
+      "sub": "Enfoque en isquiotibiales, glúteos y congestión final de torso · ~45-50 min",
+      "ejercicios": [
+        {
+          "id": "e1",
+          "nombre": "Peso Muerto Rumano (Barra / Mancuernas)",
+          "series": 4,
+          "repeticiones": "12 a 15",
+          "nota": "Llevar cadera atrás manteniendo espalda recta hasta sentir tensión en isquiotibiales. Tempo 3-1-1-0. Descanso: 60s.",
+          "peso_default": 30,
+          "historico": []
+        },
+        {
+          "id": "e2",
+          "nombre": "Curl Femoral en Pelota Grande de Yoga",
+          "series": 3,
+          "repeticiones": "12 a 15",
+          "nota": "Acostado boca arriba, elevar cadera y rodar la pelota trayendo talones hacia glúteos. Tempo 2-1-1-1. Descanso: 45s.",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e3",
+          "nombre": "Hip Thrust Unilateral o con Banda de Resistencia",
+          "series": 3,
+          "repeticiones": "15 a 20 p/p",
+          "nota": "Aislamiento de glúteo medio y mayor sin sobrecargar con peso. Tempo 2-1-1-1. Descanso: 45s.",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e4",
+          "nombre": "Superset: Push-ups en Banco + Remo con Banda",
+          "series": 3,
+          "repeticiones": "15 a 20",
+          "nota": "Flexiones de pecho inclinadas/planas seguidas inmediatamente de remo con banda. Tempo 2-0-1-0. Descanso: 45s.",
+          "peso_default": null,
+          "historico": []
+        },
+        {
+          "id": "e5",
+          "nombre": "Superset Final: Curl con Banda + Flexiones Diamante",
+          "series": 3,
+          "repeticiones": "15 a 20",
+          "nota": "Congestión total de bíceps y tríceps para cerrar la semana. Tempo 2-0-1-0. Descanso: 45s.",
+          "peso_default": null,
+          "historico": []
+        }
+      ]
+    }
+  },
+  "ultima_actualizacion": "2026-10-15"
+}
