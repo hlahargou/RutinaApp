@@ -45,7 +45,7 @@
         },
         {
           "id": "e5",
-          "nombre": "Cruces o Aperturas con Banda / Mancuernas",
+          "nombre": "Aperturas Inclinadas en Banco / Mancuernas",
           "series": 3,
           "repeticiones": "15 a 20",
           "nota": "Aislamiento y congestión final de pectoral sin forzar articulación. Tempo 2-0-1-1. Descanso: 45s.",
@@ -201,7 +201,7 @@
         },
         {
           "id": "e5",
-          "nombre": "Face Pulls / Pájaros con Banda de Resistencia",
+          "nombre": "Pájaros con Banco inclinado",
           "series": 3,
           "repeticiones": "15 a 20",
           "nota": "Anclaje a la altura de la cabeza. Tracción a ojos abriendo codos para deltoides posterior. Tempo 2-1-1-1. Descanso: 45s.",
@@ -244,7 +244,7 @@
         },
         {
           "id": "e4",
-          "nombre": "Superset: Push-ups en Banco + Remo con Banda",
+          "nombre": "Superset: Push-ups en Banco + Remo con Mancuernas inclinado",
           "series": 3,
           "repeticiones": "15 a 20",
           "nota": "Flexiones de pecho inclinadas/planas seguidas inmediatamente de remo con banda. Tempo 2-0-1-0. Descanso: 45s.",
@@ -253,7 +253,7 @@
         },
         {
           "id": "e5",
-          "nombre": "Superset Final: Curl con Banda + Flexiones Diamante",
+          "nombre": "Superset Final: Curl de Bíceps de Pie + Flexiones Diamante",
           "series": 3,
           "repeticiones": "15 a 20",
           "nota": "Congestión total de bíceps y tríceps para cerrar la semana. Tempo 2-0-1-0. Descanso: 45s.",
